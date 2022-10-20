@@ -1,0 +1,22 @@
+<div class="cz-date-widget">
+  <select id="cz-{{field}}-month" class="cz-field cz-month-selector {{class}}" data-field="{{field}}">
+    {% assign months = 'JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,NOV,DEC' | split:',' %}
+    <option value=""></option>
+    {% for month in months %}
+    	<option value="{{forloop.index}}">{{month}}</option>
+    {% endfor %}
+  </select>
+  <select id="cz-{{field}}-day" class="cz-field cz-day-selector {{class}}" data-field="{{field}}">
+    <option value=""></option>
+    {% for day in (1..31) %}
+    	<option>{{day}}</option>
+    {% endfor %}
+  </select>
+  <select id="cz-{{field}}-year" class="cz-field cz-year-selector {{class}}" data-field="{{field}}">
+    {% assign cur_year = 'now' | date: '%Y' %}
+    <option value=""></option>
+    {% for year in (1900..cur_year) reversed %}
+    	<option>{{year}}</option>
+    {% endfor %}
+  </select>
+</div>

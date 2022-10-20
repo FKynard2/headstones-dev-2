@@ -1,0 +1,16 @@
+<div class="add-ons-outer-wrapper">
+  <h4 class="title addons-title">Add-ons</h4>
+  <div class="quick-add-flex">
+
+    {%- for p in section.settings.add_on_collection.products limit: 4 -%}
+      <div class="quick-add-cart">
+        <img src="{{ p.featured_image | img_url:'x100' }}" alt="">
+        <form method="post" action="/cart/add" class="add2cart__collection">
+          <input type="hidden" name="id" value="{{ p.variants.first.id }}" />
+          <input type="hidden"  id="quantity" name="quantity" value="1" class="add2cart__collection--quantity" />
+          <input type="submit" value="{{ p.title | truncatewords: 1 }}" class="btn add2cart__collection--button">
+        </form>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>

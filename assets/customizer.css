@@ -1,0 +1,150 @@
+#cz-customizer-panel {
+  position: relative;
+  width: 530px;
+  height: 530px;
+  margin: 0 0 30px 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#cz-blank {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#cz-first, #cz-first2, #cz-last, #cz-epitaph, #cz-epitaph2 {
+  width: 100%;
+}
+
+.product-form__controls-group--customize .product-form__item {
+  flex-basis: 100%;
+}
+
+.product-form__controls-group--customize .product-form__item label {
+  text-transform: uppercase;
+}
+
+.product-form__controls-group--customize .product-form__item label,
+.product-form__controls-group--customize .product-form__item input,
+.cz-date-widget {
+  margin-bottom: 20px;
+}
+
+.cz-customize-controls.grid__item {
+  padding-left: 5px;
+}
+
+#cz-customize-controls .product-form__item {
+  flex-basis: 100%;
+  margin-top: 2rem;
+  padding-left: 0;
+}
+
+#cz-customize-controls .product-form__item label {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.cz-design-selector {
+  width: calc(100% - 30px);
+  margin-top: 55px;
+  margin-left: 30px;
+  padding-top: 2em;
+  padding-right: 30px;
+  padding-bottom: 3em;
+  background: #FFF;
+}
+
+.cz-thumb {
+  width: 20%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cz-cat-selector-container {
+  width: 100%;
+  margin-bottom: 1.25em;
+  display: block;
+}
+
+.cz-cat-selector-container:before {
+  width: 100%;
+  margin-bottom: 1em;
+  content: 'Select Your Design';
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+}
+
+.cz-cat-selector {
+  margin-right: 4px;
+  padding: 10px 18px;
+  border-radius: 2px;
+  font-size: 1em;
+  color: #FFF;
+  text-transform: uppercase;
+  background: #3a3a3a;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.cz-medium {
+  display: block;
+}
+
+.cz-color-gray {
+    color: black;
+}
+.cz-color-red,.cz-color-black {
+    color: black;
+}
+
+.cz-month-selector,.cz-day-selector,.cz-year-selector {
+  padding: 10px 22px 10px 14px;
+}
+.cz-day-selector {
+  text-align: right;
+  min-width: 65px;
+}
+.cz-year-selector,.cz-month-selector {
+  min-width: 90px;
+}
+
+.cz-text {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  text-transform: uppercase;
+  line-height: 1.25em;
+  margin-top: -0.625em;
+}
+.cz-text-date.cz-text-two-line {
+  margin-top: -1.25em;
+}
+.cz-text-married-date {
+  margin-top: -1.25em;
+}
+.cz-text-married-date.cz-text-two-line {
+  margin-top: -1.875em;
+}
+.cz-text-epitaph.cz-text-two-line {
+  margin-top: -1.25em;
+}
+
+.cz-checkout {
+  border: none;
+  width: 530px;
+  height: 530px;
+}
+
+.cz-field {
+  position: relative;
+}

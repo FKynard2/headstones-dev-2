@@ -1,0 +1,203 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1661346107e854e206": {
+      "type": "image-banner-process",
+      "blocks": {
+        "1661346107b13ce174-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We Care. Let Us Help.",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "1661346107b13ce174-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Shutterstock_1569051283_5cfc9336-e27f-43bd-95f8-d26eb591ac64.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "1661368209cbe21475": {
+      "type": "rich-text-process",
+      "blocks": {
+        "16613682090d32877e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are here to help you honor the legacy of your loved one in a way that withstands time. With years of expertise, and a staff that truly cares, we strive to make your experience a positive one.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16613682090d32877e-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1661360001be187a1e": {
+      "type": "rich-text-50",
+      "settings": {
+        "title-left": "Our Mission",
+        "text-left": "<p>Our mission is to help you leave a visible legacy for you and or your loved one. We know this is a difficult time for you, and our mission is to provide you with high-quality headstones at prices you can afford.<\/p>",
+        "title-right": "Our Process",
+        "text-right": "<p>We want this to be the last thing you have to worry about. You can order our headstones directly off our website, and we can send it directly to your website.<\/p>"
+      }
+    },
+    "1661368313bd51431f": {
+      "type": "rich-text-process",
+      "blocks": {
+        "1661368313dfe4f65a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Frequently Asked Questions<\/p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "1661368313dfe4f65a-0"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16613692486cf9af6a": {
+      "type": "faq",
+      "blocks": {
+        "607d8d5b-4e7d-4e55-ad0d-8378bd86fa80": {
+          "type": "faq",
+          "settings": {
+            "checkbox_expanded": false,
+            "title": "What should I ask the cemetery housing my plot before ordering a headstone?",
+            "content": "<p><strong>1.<\/strong>What are your required marker dimensions?<br\/><strong>2.<\/strong>What do you need the headstone company to fill out and send in to you?<br\/><strong>3.<\/strong>Who installs the headstones?<br\/><strong>4.<\/strong>What are your required fees and when are they due?<\/p>"
+          }
+        },
+        "15920471-0196-4c44-bcea-185575b229a4": {
+          "type": "faq",
+          "settings": {
+            "checkbox_expanded": false,
+            "title": "Can you create a custom size if needed?",
+            "content": "<p>Yes. Contact us to request a quote on your custom stone.<br\/><\/p>"
+          }
+        },
+        "1aaffe31-84a3-4459-8951-aa0211f3554a": {
+          "type": "faq",
+          "settings": {
+            "checkbox_expanded": false,
+            "title": "Should I send the details of the headstone to the cemetery for approval before production begins?",
+            "content": "<p>This is not required, but It’s recommended to have the cemetery review the headstone size and design before production begins so you can make sure it complies with the set standards and regulations.<\/p>"
+          }
+        },
+        "c8e77968-b6a3-489e-bf2e-ded8111ce336": {
+          "type": "faq",
+          "settings": {
+            "checkbox_expanded": false,
+            "title": "Are there options to expedite my order?",
+            "content": "<p>Yes. Contact us to discuss a time frame, and we can advise you with a quote. Price will include a rush<br\/>service fee and expedited shipping.<\/p>"
+          }
+        },
+        "e0b42dbc-44d4-4d13-bbb7-f783f8f38b77": {
+          "type": "faq",
+          "settings": {
+            "checkbox_expanded": false,
+            "title": "Can my headstone feature a personal photo?",
+            "content": "<p>Yes. You can upload your photo on our website. A member of our creative team will follow up with you to confirm details. Customized photo can only be laser etched onto the headstone.<\/p>"
+          }
+        },
+        "3b518302-f9bd-462e-a49e-bd493aa7a414": {
+          "type": "faq",
+          "settings": {
+            "checkbox_expanded": false,
+            "title": "Where will my headstone be shipped?",
+            "content": "<p>The cemetery, unless you specify an alternate location.<\/p>"
+          }
+        },
+        "9b58439f-ef68-4d17-8e5e-43d0128f381e": {
+          "type": "faq",
+          "settings": {
+            "checkbox_expanded": false,
+            "title": "What material is used to create the headstones?",
+            "content": "<p>100 percent high-quality granite.<\/p>"
+          }
+        },
+        "46c17215-c9b2-40c3-acf1-5906b992a593": {
+          "type": "faq",
+          "settings": {
+            "checkbox_expanded": false,
+            "title": "What method to you use to engrave the headstones?",
+            "content": "<p>Options include sandblasted engraving or laser engraving. Contact us and we can help you determine which method best suits your needs.<\/p>"
+          }
+        },
+        "1e789d33-42c3-47c1-b1a9-19057badfdde": {
+          "type": "faq",
+          "settings": {
+            "checkbox_expanded": false,
+            "title": "What if the headstone is lost\/damaged during shipping?",
+            "content": "<p>We will replace it at no charge. Please take pictures of the damaged headstone and contact us immediately so we can reissue the marker to you as soon as possible.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "607d8d5b-4e7d-4e55-ad0d-8378bd86fa80",
+        "15920471-0196-4c44-bcea-185575b229a4",
+        "1aaffe31-84a3-4459-8951-aa0211f3554a",
+        "c8e77968-b6a3-489e-bf2e-ded8111ce336",
+        "e0b42dbc-44d4-4d13-bbb7-f783f8f38b77",
+        "3b518302-f9bd-462e-a49e-bd493aa7a414",
+        "9b58439f-ef68-4d17-8e5e-43d0128f381e",
+        "46c17215-c9b2-40c3-acf1-5906b992a593",
+        "1e789d33-42c3-47c1-b1a9-19057badfdde"
+      ],
+      "settings": {
+        "enable_rich_schema": true,
+        "max_width": "64rem",
+        "margin_top": 1,
+        "margin_bottom": 1,
+        "background_color": "#ffffff",
+        "border_color": "#eeeeee",
+        "panel_color": "#fdfdfd",
+        "q_size_small": 1,
+        "q_size_large": 1.4,
+        "q_color": "#121212",
+        "a_color": "#121212"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1661346107e854e206",
+    "1661368209cbe21475",
+    "1661360001be187a1e",
+    "1661368313bd51431f",
+    "16613692486cf9af6a"
+  ]
+}

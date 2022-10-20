@@ -1,0 +1,50 @@
+<div class="text-50-container">
+  <div class="container-left">
+    <h2 class="title-left">{{ section.settings.title-left }}</h2>
+    <p class="text-left">{{ section.settings.text-left }}</p>
+  </div>
+  <div class="container-right">
+    <h2 class="title-right">{{ section.settings.title-right}}</h2>
+    <p class="text-right">{{ section.settings.text-right }}</p>
+  </div> 
+</div>
+
+{% schema %}
+{
+  "name": "Rich Text 50%",
+  "tag": "section",
+  "class": "section-50",
+  "settings": [
+{
+  "type": "text",
+  "id": "title-left",
+  "label": "Title Left", 
+  "default": "Title"
+},
+{
+  "type": "richtext",
+  "id": "text-left",
+  "label": "Text Left",
+  "default": "<p>Text</p>"
+},
+{
+  "type": "text",
+  "id": "title-right",
+  "label": "Title Right",
+  "default": "Title"
+},
+{
+  "type": "richtext",
+  "id": "text-right",
+  "label": "Text Right",
+  "default": "<p>Text</p>"
+}
+  ],
+  "presets": [
+{
+"name": "Rich Text 50%",
+"category": "ADVANCED LAYOUT"
+}
+]
+}
+{% endschema %}

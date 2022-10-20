@@ -1,0 +1,50 @@
+<div class="text-30-70-container">
+  <div class="container30">
+    <h2 class="title30">{{ section.settings.title-30 }}</h2>
+    <p class="text30">{{ section.settings.text-30 }}</p>
+  </div>
+  <div class="container70">
+    <h2 class="title70">{{ section.settings.title-70}}</h2>
+    <p class="text70">{{ section.settings.text-70 }}</p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Rich Text 30%",
+  "tag": "section",
+  "class": "section-30",
+  "settings": [
+{
+  "type": "text",
+  "id": "title-30",
+  "label": "Title Left",
+  "default": "Title"
+},
+{
+  "type": "richtext",
+  "id": "text-30",
+  "label": "Text Left",
+  "default": "<p>Text</p>"
+},
+{
+  "type": "text",
+  "id": "title-70",
+  "label": "Title Right",
+  "default": "Title"
+},
+{
+  "type": "richtext",
+  "id": "text-70",
+  "label": "Text Right",
+  "default": "<p>Text</p>"
+}
+  ],
+    "presets": [
+{
+"name": "Rich Text 30%",
+"category": "ADVANCED LAYOUT"
+}
+]
+}
+{% endschema %}

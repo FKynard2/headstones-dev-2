@@ -1,0 +1,524 @@
+{% liquid 
+%}
+
+{% comment %}theme-check-disable{% endcomment %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css" integrity="sha256-6YrKt7vMU9e4bwtlblASqhvvEt4/0JEQJ/zyWOFKnaM=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/js/splide.min.js" integrity="sha256-esNVkEwsSpRc+USDUy7gWsyTZprX+CtOFMUgVq9JYnE=" crossorigin="anonymous"></script>
+{% comment %}theme-check-enable{% endcomment %}
+
+<style>
+#eg-testimonials-{{ section.id }} {
+    {% unless section.settings.bg_color == 'rgba(0,0,0,0)' %}
+        background-color: {{ section.settings.bg_color }};
+    {% endunless %}
+    {% unless section.settings.color == 'rgba(0,0,0,0)' %}
+        color: {{ section.settings.color }};
+    {% endunless %}
+    overflow: hidden;
+    text-align: {{ section.settings.text_align }};
+    padding-top: {{ section.settings.pt }}rem;
+    padding-bottom: {{ section.settings.pb }}rem;
+    margin-top: {{ section.settings.mt }}rem;
+    margin-bottom: {{ section.settings.mb }}rem;
+}
+#eg-testimonials-{{ section.id }} header {
+}
+#eg-testimonials-{{ section.id }} header .title {
+    {% unless section.settings.color == 'rgba(0,0,0,0)' %}
+        color: {{ section.settings.color }};
+    {% endunless %}
+    margin-bottom: .5rem;   
+}
+#eg-testimonials-{{ section.id }} .testimonial {
+    padding: 1rem;
+}
+#eg-testimonials-{{ section.id }} .testimonial .title {
+    margin: 0 0 .5rem;
+}
+#eg-testimonials-{{ section.id }} .testimonial .description {
+    line-height: normal;
+}
+#eg-testimonials-{{ section.id }} .testimonial .testimonial-star-rating {
+    margin-bottom: .5rem;
+}
+#eg-testimonials-{{ section.id }} .testimonial .testimonials-author-img {
+    border-radius: 50%;
+    margin-top: 1.75rem;   
+}
+#eg-testimonials-{{ section.id }} .testimonial .testimonials-author-name {
+    margin: .125rem 0;
+    font-size: .9em;
+}
+#eg-testimonials-{{ section.id }} .eg-testimonials-button {
+    margin-top: 2rem;
+}
+
+/* SplideJS styling */
+#eg-testimonials-{{ section.id }} .splide {
+    padding: 2.5rem 0 3.5rem;
+}
+#eg-testimonials-{{ section.id }} .splide__arrow {
+    background-color: rgba(0, 0, 0, .1);
+}
+@media (max-width: 1399px) {
+    #eg-testimonials-{{ section.id }} .splide__arrow {
+        display: none
+    }
+}
+@media (min-width: 1400px) {
+    #eg-testimonials-{{ section.id }} .splide__arrow--prev {
+        left: -2.5rem;
+    }
+    #eg-testimonials-{{ section.id }} .splide__arrow--next {
+        right: -2.5rem;
+    }
+}
+#eg-testimonials-{{ section.id }} .splide__pagination {
+}
+#eg-testimonials-{{ section.id }} .splide__pagination__page {
+}
+#eg-testimonials-{{ section.id }} .splide__pagination__page.is-active {
+    opacity: 1;
+    background: currentColor;
+    transform: scale(1.2);
+}
+</style>
+
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+    // init splideJS
+    const initSplide = () => {
+        const section = document.querySelector('#eg-testimonials-{{ section.id }}')
+
+        const splide = new Splide(section.querySelector('.splide'), {
+            arrows: section.dataset.arrows === 'true',
+            pagination: section.dataset.pagination === 'true',
+            easing: section.dataset.easing,
+            speed: Number(section.dataset.speed),
+            autoplay: section.dataset.autoplay === 'true',
+            interval: Number(section.dataset.interval),
+            perMove:  Number(section.dataset.perMove),
+            drag: true,
+            rewind: true,
+            mediaQuery: 'min',
+            perPage:  Number(section.dataset.breakpointMobile),
+            // focus: 'center',
+            breakpoints: {
+                750: { perPage: Number(section.dataset.breakpointTablet) },
+                990: { perPage: Number(section.dataset.breakpointDesktop)},
+            },
+        })
+        splide.mount()
+    }
+    initSplide()
+    
+    // Listen for changes in Shopify Theme editor
+    document.addEventListener('shopify:section:load', (e) => {
+        if (e.target.querySelector('#eg-testimonials-{{ section.id }}')) {
+            initSplide()
+        }
+    })
+})
+</script>
+
+<section 
+    id="eg-testimonials-{{ section.id }}" 
+    class="eg-testimonials"
+    data-arrows="{{ section.settings.carousel_arrows }}"
+    data-pagination="{{ section.settings.carousel_pagination }}"
+    data-easing="{{ section.settings.carousel_easing }}"
+    data-speed="{{ section.settings.carousel_speed }}"
+    data-autoplay="{{ section.settings.carousel_autoplay }}"
+    data-interval="{{ section.settings.carousel_interval | times: 1000 }}"
+    data-per-move="{{ section.settings.carousel_per_move }}"
+    data-breakpoint-mobile="{{ section.settings.breakpoint_mobile }}"
+    data-breakpoint-tablet="{{ section.settings.breakpoint_tablet }}"
+    data-breakpoint-desktop="{{ section.settings.breakpoint_desktop }}">
+    <div class="page-width container">
+    <hr>
+    {{ 'qoutes.png' | asset_url | img_tag: 'mission statement' }}
+    <h2 class="rich-text__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+    {{ block.settings.heading | replace: 'p>', 'span>' }}
+    </h2>
+        <header class="">
+            {% unless section.settings.title == blank %}
+                <h2 class="title {{ section.settings.title_size }}">
+                    {{ section.settings.title }}
+                </h2>
+            {% endunless %}
+            {% unless section.settings.description == blank %}
+                <div class="description rte">
+                    {{ section.settings.description }}
+                </div>
+            {% endunless %}
+        </header>
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    {% for block in section.blocks %}
+                        <li class="splide__slide">
+                            <div class="testimonial">
+                                <h3 class="title {{ block.settings.title_size }}">
+                                    {{ block.settings.title }}
+                                </h3>
+                                {% if block.settings.show_stars %}
+                                    <div class="testimonial-star-rating">
+                                        {% for n in (1..5) %}
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                                <div class="description rte">
+                                    {{ block.settings.description }}
+                                </div>
+                                {% unless block.settings.author_img == blank %}
+                                    <img 
+                                        class="testimonials-author-img"
+                                        src="{{ block.settings.author_img | image_url: width: 60, height: 60, crop: 'center' }}" 
+                                        alt="{{ block.settings.author_img.alt }}"
+                                        width="60"
+                                        height="60"
+                                        loading="lazy">
+                                    {% endunless %}
+                                {% unless block.settings.author_name == blank %}
+                                    <p class="testimonials-author-name">
+                                        {{ block.settings.author_name }}
+                                    </p>
+                                {% endunless %}
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% unless section.settings.btn_text == blank %}
+            <a href="{{ section.settings.btn_url }}" class="eg-testimonials-button button {{ section.settings.btn_color }}">
+                {{ section.settings.btn_text }}
+            </a>
+        {% endunless %}
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Testimonials",
+    "settings": [
+        {
+            "type": "header",
+            "content": "General"
+        },
+        {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background color"
+        },
+        {
+            "type": "color",
+            "id": "color",
+            "label": "Text color"
+        },
+        {
+            "type": "select",
+            "id": "text_align",
+            "label": "Text align",
+            "options": [
+                { "value": "left", "label": "Left" },
+                { "value": "center", "label": "Center" }
+            ],
+            "default": "center"
+        },
+        {
+            "type": "header",
+            "content": "Header"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Customer Testimonials"
+        },
+        {
+            "type": "select",
+            "id": "title_size",
+            "label": "Title Size",
+            "default": "h2",
+            "options": [
+                {  "value": "h1", "label": "H1" },
+                {  "value": "h2", "label": "H2" },
+                {  "value": "h3", "label": "H3" },
+                {  "value": "h4", "label": "H4" },
+                {  "value": "h5", "label": "H5" },
+                {  "value": "h6", "label": "H6" }
+            ]
+        },
+        {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description",
+            "default": "<p>Proudly rated 5/5 from 1000+ customers</p>"
+        },
+        {
+            "type": "header",
+            "content": "Carousel"
+        },
+        {
+            "type": "checkbox",
+            "id": "carousel_arrows",
+            "label": "Show arrows",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "carousel_pagination",
+            "label": "Show pagination",
+            "default": true
+        },
+        {
+            "type": "text",
+            "id": "carousel_easing",
+            "label": "Easing",
+            "default": "cubic-bezier(.42,.65,.27,.99)",
+            "info": "[Learn more](https://cubic-bezier.com)"
+        },
+        {
+            "type": "range",
+            "id": "carousel_speed",
+            "label": "Speed (ms)",
+            "min": 50,
+            "max": 1000,
+            "default": 300,
+            "step": 50,
+            "info": "Transition speed in milliseconds."
+        },
+        {
+            "type": "checkbox",
+            "id": "carousel_autoplay",
+            "label": "Autoplay",
+            "default": false
+        },
+        {
+            "type": "range",
+            "id": "carousel_interval",
+            "label": "Autoplay interval (sec)",
+            "min": 1,
+            "max": 10,
+            "default": 6,
+            "step": 1
+        },
+        {
+            "type": "range",
+            "id": "carousel_per_move",
+            "label": "Per move",
+            "info": "Number of slides to move. Select 0 to move all in view.",
+            "min": 0,
+            "max": 10,
+            "default": 1,
+            "step": 1
+        },
+        {
+            "type": "header",
+            "content": "Breakpoints",
+            "info": "Adjust items per slide based on screen resolution"
+        },
+        {
+            "type": "range",
+            "id": "breakpoint_mobile",
+            "label": "Items per slide / mobile",
+            "info": "Less than 750px",
+            "min": 1,
+            "max": 3,
+            "step": 1,
+            "default": 1
+        },
+        {
+            "type": "range",
+            "id": "breakpoint_tablet",
+            "label": "Items per slide / tablet",
+            "info": "750px - 990px",
+            "min": 1,
+            "max": 3,
+            "step": 1,
+            "default": 2
+        },
+        {
+            "type": "range",
+            "id": "breakpoint_desktop",
+            "label": "Items per slide / desktop",
+            "info": "More than 990px",
+            "min": 1,
+            "max": 6,
+            "step": 1,
+            "default": 3
+        },
+        {
+            "type": "header",
+            "content": "'View all' button"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button text",
+            "default": "View all reviews",
+            "info": "Leave empty to disable button"
+        },
+        {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Button URL"
+        },
+        {
+            "type": "select",
+            "id": "btn_color",
+            "label": "Button color",
+            "default": "btn-primary button--primary",
+            "options": [
+                { "value": "btn-primary button--primary", "label": "Primary" },
+                { "value": "btn-secondary button--secondary", "label": "Secondary" },
+                { "value": "btn-primary button--primary button--inverted", "label": "Primary inverted" },
+                { "value": "btn-secondary button--secondaryy button--inverted", "label": "Secondary inverted" }
+            ]
+        },
+        {
+            "type": "header",
+            "content": "Spacing",
+            "info": "Based on 'rem' values [Learn more](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)"
+        },
+        {
+            "type": "range",
+            "id": "pt",
+            "label": "Padding top",
+            "min": 0,
+            "max": 12,
+            "step": 1,
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "pb",
+            "label": "Padding bottom",
+            "min": 0,
+            "max": 12,
+            "step": 1,
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "mt",
+            "label": "Margin top",
+            "min": 0,
+            "max": 12,
+            "step": 1,
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "mb",
+            "label": "Margin bottom",
+            "min": 0,
+            "max": 12,
+            "step": 1,
+            "default": 0
+        }
+    ],
+    "blocks": [
+        {
+            "type": "block",
+            "name": "Block",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "select",
+                    "id": "title_size",
+                    "label": "Title Size",
+                    "default": "h3",
+                    "options": [
+                        {  "value": "h1", "label": "H1" },
+                        {  "value": "h2", "label": "H2" },
+                        {  "value": "h3", "label": "H3" },
+                        {  "value": "h4", "label": "H4" },
+                        {  "value": "h5", "label": "H5" },
+                        {  "value": "h6", "label": "H6" }
+                    ]
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_stars",
+                    "label": "Show stars",
+                    "default": true
+                },
+                {
+                    "type": "richtext",
+                    "id": "description",
+                    "label": "Description"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "author_img",
+                    "label": "Author Photo"
+                },
+                {
+                    "type": "text",
+                    "id": "author_name",
+                    "label": "Author Name"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Testimonials",
+            "category": "General",
+            "blocks": [
+                {
+                    "type": "block",
+                    "settings": {
+                        "title": "Your products are amazing!",
+                        "description": "<p>I have been using your products for all of this time and I simply love them. Keep up the good work.</p>"
+                    }
+                },
+                {
+                    "type": "block",
+                    "settings": {
+                        "title": "Your products are amazing!",
+                        "description": "<p>I have been using your products for all of this time and I simply love them. Keep up the good work.</p>"
+                    }
+                },
+                {
+                    "type": "block",
+                    "settings": {
+                        "title": "Your products are amazing!",
+                        "description": "<p>I have been using your products for all of this time and I simply love them. Keep up the good work.</p>"
+                    }
+                },
+                {
+                    "type": "block",
+                    "settings": {
+                        "title": "Your products are amazing!",
+                        "description": "<p>I have been using your products for all of this time and I simply love them. Keep up the good work.</p>"
+                    }
+                },
+                {
+                    "type": "block",
+                    "settings": {
+                        "title": "Your products are amazing!",
+                        "description": "<p>I have been using your products for all of this time and I simply love them. Keep up the good work.</p>"
+                    }
+                },
+                {
+                    "type": "block",
+                    "settings": {
+                        "title": "Your products are amazing!",
+                        "description": "<p>I have been using your products for all of this time and I simply love them. Keep up the good work.</p>"
+                    }
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

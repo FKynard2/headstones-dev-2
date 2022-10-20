@@ -1,0 +1,150 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1661346107e854e206": {
+      "type": "image-banner-process",
+      "blocks": {
+        "1661346107b13ce174-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Process",
+            "heading_size": "h1"
+          }
+        },
+        "1661346107b13ce174-1": {
+          "type": "text",
+          "settings": {
+            "text": "Duis eu nibh egestas, venenatis ante eu, tincidunt mauris. Suspendisse ante magna, ultricies mollis venenatis iaculis, consectetur vitae elit.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1661346107b13ce174-0",
+        "1661346107b13ce174-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/shutterstock_1824815939_442644c9-5da8-45e5-bc6c-83fd08fc0545.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "1661346474bfdb2c21": {
+      "type": "image-with-text",
+      "blocks": {
+        "166134647411c7c86f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Carving \/ Engraving",
+            "heading_size": "h1"
+          }
+        },
+        "166134647411c7c86f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All of the text and artwork is cut deep into the headstone by high pressure sandblasting operation.  We use “double processed lettering” for a clearer deeper letter.<\/p><p>We use state of the art fully computerized Kern laser engraving process , Laser etching process allows you to get a photographic near realistic pictures and artwork to be engraved on the headstone and monument. This process is Ideal for etching your pictures, scenes and any memorable pictures on a memorial.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "166134647411c7c86f-0",
+        "166134647411c7c86f-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Shutterstock_1735516868.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    },
+    "1661346937ebe54698": {
+      "type": "rich-text-30",
+      "settings": {
+        "title-30": "Ordering",
+        "text-30": "<p>There are some cemeteries and funeral homes which sell the same grave markers for a higher cost and discourage people from buying from an outside vendor, by law you as a customer can buy from any outside vendors.<\/p>",
+        "title-70": "Please ask your cemetery the following questions.",
+        "text-70": "<p><strong>Color of the Stone<br\/><\/strong>Do they have any granite and\/or bronze color restrictions?<\/p><p><strong>Limitation on Size<br\/><\/strong>Is there a minimum and\/or maximum restriction on the dimensions of the stone?<\/p><p><strong>Accessories (Lights, Vases)<br\/><\/strong>Do they allow accessories like vases Light candles to be installed inside the cemetery?<\/p><p><strong>Memorial Type<br\/><\/strong>What types of cemetery memorial headstones are allowed? Granite only Flat Markers, Bronze only Markers, Bevel Markers, Slant Markers, Infant Markers, Single Upright monuments, Double Upright monuments, Infant Monuments etc.<\/p><p><strong>Delivery & Installation<br\/><\/strong>What are the procedures for delivery and installation of the memorial headstone? Is a fee levied for installation?<\/p>"
+      }
+    },
+    "1661366829d3da6367": {
+      "type": "rich-text-process",
+      "blocks": {
+        "16613668297d501c16-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Shipping<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "16613668297d501c16-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All our cemetery memorials are safely crated on wooden boxes and shipped through common carriers. Our shipper will give you or your shipping contact person a call ahead of delivery to make sure that you headstones or monuments arrive on time. Customers sometimes have stones shipped to their own work location. This is fine with us, but be sure your boss isn't going to mind if a grave marker addressed to you arrives at their loading dock!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16613668297d501c16-0",
+        "16613668297d501c16-1"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1661360001be187a1e": {
+      "type": "rich-text-50",
+      "settings": {
+        "title-left": "Rush Orders",
+        "text-left": "<p>TextOur work queue generally runs 2 to 6 weeks, longer in late spring, and shorter in the middle of winter. Shipping takes around a week, so you can generally plan that a headstone ordered through us will be delivered within 7 weeks after the stone has been paid for.<\/p><p>If you have a specific date that you need the stone by, that is within the 4 to 5 week range, contact us before ordering the headstone and we'll make sure it gets sent in time.<\/p><p>If you need the stone quicker than that, we can put the stone through as a rush order.  Rush orders are placed at the front of our work queue. <strong>There is an extra charge for rush orders.<\/strong><\/p>",
+        "title-right": "Insurance",
+        "text-right": "<p>For our headstones, insurance is included with the shipping for the headstone.  We also handle the insurance paperwork. There is nothing extra for customers to do for their stone to be shipped insured.<\/p><p>Very rarely there is damage incurred in shipping.  If this should happen please contact us.  We will need a photo from you of the damage.  We then handle the rest of the insurance paperwork and will make and ship the replacement stone.<\/p>"
+      }
+    },
+    "1661360008c8ba2e8e": {
+      "type": "rich-text-50",
+      "settings": {
+        "title-left": "Cemetery Installation Fees & Regulations",
+        "text-left": "<p>Headstonedirect.com is not responsible for any cemetery or installation fees. The prices you see on Headstonedirect.com do not include the cost of installation. Many cemeteries will have fees for installation and endowment care for the headstone or monument that you will pay directly to them. Check with them to find out what those charges might be. Most cemeteries require payment in full before accepting delivery of a memorial. When you check with them about their rules and regulations, verify when the payment has to be made. It may be possible to pay them as soon as you order the cemetery memorial.<\/p><p>Headstonedirect.com will do everything in its power to ensure that all memorials sold meet the requirements of the cemetery in which it is being installed. It is, however, ultimately the responsibility of the purchaser that the grave marker conforms to cemetery regulations.<\/p>",
+        "title-right": "Return and Exchange Policy",
+        "text-right": "<p><em><strong>All sales are final.<\/strong><\/em><\/p><p>Headstonesdirect.com monitors product shipments and provides customer assistance in the event of carrier problems or destination errors. Prior to signing for receipt of goods, it is the customer's responsibility to inspect the product packaging for any indication that damage to the product may have occurred in transit. Failure to do so can void damage claims.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1661346107e854e206",
+    "1661346474bfdb2c21",
+    "1661346937ebe54698",
+    "1661366829d3da6367",
+    "1661360001be187a1e",
+    "1661360008c8ba2e8e"
+  ]
+}
