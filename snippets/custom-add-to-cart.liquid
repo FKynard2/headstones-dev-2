@@ -15,6 +15,7 @@
       <div class="product-form__buttons">
         <button id="cz-finalize-button" class="product-form__finalize button">Finalize Design</button>
         <button
+        id="add-to-cart"
           type="submit"
           name="add"
           class="product-form__submit-disabled product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"

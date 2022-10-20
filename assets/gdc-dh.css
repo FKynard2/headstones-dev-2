@@ -87,7 +87,7 @@ body.template-product- .product {
 }
 #cz-customizer-container label.cz-single-field {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: 18px; 
   letter-spacing: 0.01em;
   color: #000000;
   margin-bottom: 14px;
@@ -122,7 +122,7 @@ body.template-product- .product {
 #cz-customizer-container .product-form__submit,
 #cz-customizer-container .product-form__finalize {
   border-radius: 100px;
-  background: #f4f4f4;
+  background: #a9a9a9;
   color: black;
   width: 180px;
   font-size: 14px;
@@ -247,11 +247,11 @@ body.template-product- .product {
 #cz-customizer-container input, #cz-customizer-container select {
   box-shadow: 3px 3px 5px rgba(22, 22, 22, 0.3);
 }
-#cz-customizer-container .price-label, #cz-customizer-container .price, #cz-customizer-container label, #cz-customizer-container .cz-cat-selector-container,
+/* #cz-customizer-container .price-label, #cz-customizer-container .price, #cz-customizer-container label, #cz-customizer-container .cz-cat-selector-container,
 #cz-customizer-container .product-description,
 #cz-customizer-container .product-title {
   /*text-shadow: 3px 3px 5px rgba(22,22,22,0.3);*/
-}
+*/
 
 /* # cz-customizer-container */
 .cz-proof-element {
@@ -330,3 +330,4 @@ iframe.cz-checkout {
   width: 530px;
   height: 530px;
 }/*# sourceMappingURL=gdc-dh.css.map */
+

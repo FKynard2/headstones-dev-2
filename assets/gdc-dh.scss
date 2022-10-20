@@ -400,3 +400,20 @@ iframe.cz-checkout {
     display: none;
   }
 }
+
+#cz-customizer-container .product-form__share,
+#cz-customizer-container .product-form__submit,
+#cz-customizer-container .product-form__finalize {
+  border-radius: 100px;
+  background: #a9a9a9;
+  color: black;
+  width: 180px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.special-insturctions{
+  margin: auto 20%;
+}

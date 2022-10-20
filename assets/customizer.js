@@ -396,3 +396,24 @@
 
   
 })();
+
+
+const submitButton = document.getElementById('cz-share-design')
+const epitaph = document.getElementById('cz-epitaph')
+const addToCart = document.getElementById('add-to-cart')
+const czEpitaph = document.getElementById('cz-epitaph2')
+const finalDesign = document.getElementById('cz-finalize-button')
+
+epitaph.addEventListener('keyup', (e) => {
+ submitButton.classList.add("product-form__share-disabled")
+ addToCart.classList.add("product-form__share-disabled")
+})
+
+czEpitaph.addEventListener('keyup', (e) => {
+ submitButton.classList.add("product-form__share-disabled")
+ addToCart.classList.add("product-form__share-disabled")
+})
+
+finalDesign.addEventListener('click', () => {
+  addToCart.classList.remove("product-form__share-disabled")
+})
