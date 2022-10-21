@@ -66,6 +66,8 @@
                       {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
                       <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
                       <iframe src="https://customizer.headstonedirect.com/api/checkout/{{ item.properties['_proof_id'] }}/{{ item.product.handle }}" class="cz-checkout"></iframe> 
+                      
+
                        {%- comment -%}
                         <div class="cart-item__image-container gradient global-media-settings">
                           <img src="{{ item.image | image_url: width: 300 }}"

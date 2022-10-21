@@ -274,10 +274,13 @@
   }
 
   $('#cz-customizer-panel').addClass(`cz-color-${color}`);
+  console.log({format});
   if ('individual' == format) {
     $container.find('.cz-double-field').remove();
   } else if ('family' == format) {
-    $container.find('.cz-single-field,.cz-double-field').remove();
+    $container.find('.cz-double-field').remove();
+    $container.find('.cz-single-field').not('.cz-single-field-last-name').remove();
+    $('#customizerFieldsWrapper').addClass('family-customizer');
   }
   $('#cz-customize-button').on('click', (e) => {
     e.stopPropagation();
