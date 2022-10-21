@@ -400,7 +400,7 @@
   
 })();
 
-
+// This is to disable buttons when if the customer tries to change the form
 const submitButton = document.getElementById('cz-share-design')
 const epitaph = document.getElementById('cz-epitaph')
 const addToCart = document.getElementById('add-to-cart')
