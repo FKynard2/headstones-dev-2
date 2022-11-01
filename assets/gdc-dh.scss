@@ -433,7 +433,10 @@ iframe.cz-checkout {
       font-size: 17px !important;
   }
   #cz-text-first{
-      font-size: 17px !important;
+      font-size: 12px !important;
+  }
+  #cz-text-first2{
+      font-size: 12px !important;
   }
   .cz-text.cz-text-name.cz-double-field{
       font-size: 17px !important;
@@ -442,16 +445,19 @@ iframe.cz-checkout {
       font-size: 10px !important;
   }
   #cz-text-birth_date{
-      font-size: 14px !important;
+      font-size: 10px !important;
   }
   #cz-text-death_date{
-      font-size: 14px !important;
+      font-size: 10px !important;
   }
   #cz-text-birth_date2{
-      font-size: 14px !important;
+      font-size: 10px !important;
   }
   #cz-text-death_date2{
-      font-size: 14px !important;
+      font-size: 10px !important;
+  }
+  .cz-text-date-separator{
+    font-size: 10px !important;
   }
   .product-title-mobile{
       display: block;
