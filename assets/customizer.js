@@ -400,23 +400,84 @@
   
 })();
 
-// This is to disable buttons when if the customer tries to change the form
+
+
 const submitButton = document.getElementById('cz-share-design')
-const epitaph = document.getElementById('cz-epitaph')
 const addToCart = document.getElementById('add-to-cart')
-const czEpitaph = document.getElementById('cz-epitaph2')
+const allFields = document.getElementsByClassName("cz-field")
 const finalDesign = document.getElementById('cz-finalize-button')
 
-epitaph.addEventListener('keyup', (e) => {
- submitButton.classList.add("product-form__share-disabled")
- addToCart.classList.add("product-form__share-disabled")
-})
 
-czEpitaph.addEventListener('keyup', (e) => {
- submitButton.classList.add("product-form__share-disabled")
- addToCart.classList.add("product-form__share-disabled")
-})
+for (var i = 0; i < allFields.length; i++) {
+  allFields[i].addEventListener('click', () => {
+    submitButton.classList.add("product-form__share-disabled")
+    addToCart.classList.add("product-form__share-disabled")
+  })
+}
 
 finalDesign.addEventListener('click', () => {
   addToCart.classList.remove("product-form__share-disabled")
 })
+
+
+// This is to disable buttons when if the customer tries to change the form
+// const submitButton = document.getElementById('cz-share-design')
+// const epitaph = document.getElementById('cz-epitaph')
+// const addToCart = document.getElementById('add-to-cart')
+// const czEpitaph = document.getElementById('cz-epitaph2')
+// const finalDesign = document.getElementById('cz-finalize-button')
+// const first = document.getElementById('cz-first')
+// const last = document.getElementById('cz-last')
+// const month = document.getElementById('cz-birth_date-month')
+// const day = document.getElementById('cz-birth_date-day')
+// const year = document.getElementById('cz-birth_date-year')
+// const deathMonth = document.getElementById('cz-death_date-month')
+// const deathDay = document.getElementById('cz-death_date-day')
+// const deathYear = document.getElementById('cz-death_date-year')
+
+
+// epitaph.addEventListener('keyup', (e) => {
+//  submitButton.classList.add("product-form__share-disabled")
+//  addToCart.classList.add("product-form__share-disabled")
+// })
+
+// czEpitaph.addEventListener('keyup', (e) => {
+//  submitButton.classList.add("product-form__share-disabled")
+//  addToCart.classList.add("product-form__share-disabled")
+// })
+// first.addEventListener('keyup', (e) => {
+//  submitButton.classList.add("product-form__share-disabled")
+//  addToCart.classList.add("product-form__share-disabled")
+// })
+// last.addEventListener('keyup', (e) => {
+//  submitButton.classList.add("product-form__share-disabled")
+//  addToCart.classList.add("product-form__share-disabled")
+// })
+// month.addEventListener('click', (e) => {
+//  submitButton.classList.add("product-form__share-disabled")
+//  addToCart.classList.add("product-form__share-disabled")
+// })
+// day.addEventListener('click', (e) => {
+//  submitButton.classList.add("product-form__share-disabled")
+//  addToCart.classList.add("product-form__share-disabled")
+// })
+// year.addEventListener('click', (e) => {
+//  submitButton.classList.add("product-form__share-disabled")
+//  addToCart.classList.add("product-form__share-disabled")
+// })
+// deathMonth.addEventListener('click', (e) => {
+//  submitButton.classList.add("product-form__share-disabled")
+//  addToCart.classList.add("product-form__share-disabled")
+// })
+// deathDay.addEventListener('click', (e) => {
+//  submitButton.classList.add("product-form__share-disabled")
+//  addToCart.classList.add("product-form__share-disabled")
+// })
+// deathYear.addEventListener('click', (e) => {
+//  submitButton.classList.add("product-form__share-disabled")
+//  addToCart.classList.add("product-form__share-disabled") 
+// })
+
+// finalDesign.addEventListener('click', () => {
+//   addToCart.classList.remove("product-form__share-disabled")
+// })

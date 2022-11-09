@@ -94,14 +94,14 @@
                     <div class="product-form__controls-group product-form__controls-group--customize">
                       <div class="product-form__item">
                         <label class="cz-single-field" style="font-size: 18px;" for="first">First name (All Letters will be sized to fit)  </label>
-                        <input data-field="first" class="cz-field cz-single-field" id="cz-first" value="John W">
+                        <input data-field="first" class="cz-field cz-single-field" id="cz-first" value="John W" onfocus= "if (this.value == 'John W') {this.value = '';}">
                       </div>
                     </div>
                     
                     <div class="product-form__controls-group product-form__controls-group--customize">
                       <div class="product-form__item">
                         <label class="cz-single-field cz-single-field-last-name" style="font-size: 18px;" for="last">Last name (All Letters will be sized to fit) </label>
-                        <input data-field="last" class="cz-field" id="cz-last" value="EDMUNDSEN">
+                        <input data-field="last" class="cz-field" id="cz-last" value="EDMUNDSEN" onfocus= "if (this.value == 'EDMUNDSEN') {this.value = '';}">
                       </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                         <label class="cz-double-field cz-married-element" for="married_date">Date married</label>
                         {% render 'date-widget', field: 'married_date', class: 'cz-married-element cz-double-field' %}
                         <label class="cz-single-field cz-epitaph-element" for="epitaph">Epitaph</label>
-                        <input data-field="epitaph" class="cz-field cz-single-field cz-epitaph-element" id="cz-epitaph" value="Rest in peace">
+                        <input data-field="epitaph" class="cz-field cz-single-field cz-epitaph-element" id="cz-epitaph" value="Rest in peace" onfocus= "if (this.value == 'Rest in peace') {this.value = '';}">
                         <input data-field="epitaph" class="cz-field cz-single-field cz-epitaph-element" id="cz-epitaph2" value="">
                 </div>
 
@@ -129,7 +129,7 @@
                     <div class="product-form__controls-group product-form__controls-group--customize">
                       <div class="product-form__item">
                         <label class="cz-double-field" for="first2">First name 2</label>
-                        <input data-field="first2" class="cz-field cz-double-field" id="cz-first2" value="Mary H">
+                        <input data-field="first2" class="cz-field cz-double-field" id="cz-first2" value="Mary H" onfocus= "if (this.value == 'Mary H') {this.value = '';}">
                         <div class="customizer-row customizer-row-flex">
                           <div class="product-form__controls-group product-form__controls-group--customize">
                             <label class="cz-double-field" for="birth_date2">Date of birth 2</label>
