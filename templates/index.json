@@ -20,16 +20,16 @@
         "2ddf0024-eb5c-45f0-82a8-e5b37727c40d": {
           "type": "Image",
           "settings": {
-            "block-image-1": "shopify:\/\/shop_images\/image_2.png",
+            "block-image-1": "shopify:\/\/shop_images\/image_2_1.png",
             "block-title-1": "Bevel",
             "block-url-1": "shopify:\/\/collections\/bevel",
-            "block-image-2": "shopify:\/\/shop_images\/image_3.png",
+            "block-image-2": "shopify:\/\/shop_images\/image_3_e0498029-ca2c-442e-8a6b-584b7ccabdcd.png",
             "block-title-2": "Flat",
             "block-url-2": "shopify:\/\/collections\/flat",
-            "block-image-3": "shopify:\/\/shop_images\/image_4.png",
+            "block-image-3": "shopify:\/\/shop_images\/image_4_3.png",
             "block-title-3": "Slant",
             "block-url-3": "shopify:\/\/collections\/slant",
-            "block-image-4": "shopify:\/\/shop_images\/image_4_1.png",
+            "block-image-4": "shopify:\/\/shop_images\/d1006-blue-upright.png",
             "block-title-4": "Upright",
             "block-url-4": "shopify:\/\/collections\/upright"
           }
@@ -59,6 +59,7 @@
       "blocks": {
         "f459e5d8-9978-4677-aa85-0ebd983a42cc": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Materials",
             "icon": "leather",
@@ -69,6 +70,7 @@
         },
         "dfead95e-b148-4a74-a9c5-5fdacefae0a6": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping",
             "icon": "truck",
@@ -79,6 +81,7 @@
         },
         "a1e6d4f4-a34d-4cd3-bdcc-478a7cd6c33b": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",

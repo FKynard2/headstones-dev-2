@@ -17,7 +17,7 @@
         <div class="cz-text cz-text-name" id="cz-text-last"></div>
         <div class="cz-text cz-text-date cz-single-field" id="cz-text-birth_date"></div>
         <div class="cz-text cz-text-date cz-single-field" id="cz-text-death_date"></div>
-        <div class="cz-text cz-text-married-date cz-double-field cz-married-element" id="cz-text-married_date"></div>
+        <div class="cz-text cz-text-married-date cz-double-field cz-married-element {% if product.title contains '*D1422' %} married-text {% endif %} {% if product.title contains '*D1015' or product.title contains '*D887' or product.title contains '*D705' %} married-text2 {% endif %}"  id="cz-text-married_date"></div>
         <div class="cz-text cz-text-date-separator cz-single-field" id="cz-text-date_separator"></div>
         <div class="cz-text cz-text-date-separator cz-double-field" id="cz-text-date_separator2"></div>
         <div class="cz-text cz-text-epitaph cz-single-field cz-epitaph-element" id="cz-text-epitaph"></div>
@@ -25,7 +25,7 @@
         <div class="cz-text cz-text-date cz-double-field" id="cz-text-birth_date2"></div>
         <div class="cz-text cz-text-date cz-double-field" id="cz-text-death_date2"></div>
       </div> <!-- #cz-customizer-panel  -->
-      <h3 class='special-insturctions'>(All items will be made to fit see Care instructions for more details)</h3>
+      <h3 class='special-insturctions'>(All text will be made to fit.)</h3>
       <div class="faqContainer"><div id="faqWrapper">
         <h2 class="title">FAQ</h2>
         <div class="accordions">
@@ -122,7 +122,7 @@
                         {% render 'date-widget', field: 'married_date', class: 'cz-married-element cz-double-field' %}
                         <label class="cz-single-field cz-epitaph-element" for="epitaph">Epitaph</label>
                         <input data-field="epitaph" class="cz-field cz-single-field cz-epitaph-element" id="cz-epitaph" value="Rest in peace" onfocus= "if (this.value == 'Rest in peace') {this.value = '';}">
-                        <input data-field="epitaph" class="cz-field cz-single-field cz-epitaph-element" id="cz-epitaph2" value="">
+                         <input data-field="epitaph" class="cz-field cz-single-field cz-epitaph-element second-line" id="cz-epitaph2" value="">
                 </div>
 
                 <div class="customizer-row">

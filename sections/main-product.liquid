@@ -7,7 +7,25 @@
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
-
+{% if product.metafields.custom.mobile_date_font_size != blank %}
+  <!-- product font metafield is {{ product.metafields.custom.mobile_date_font_size }} --> 
+  {%- comment -%}Use the product metafield to set font size on mobile product preview{%- endcomment -%}
+  <style>
+  @media (max-width: 749px) {
+    #cz-customizer-panel #cz-text-birth_date, 
+    #cz-customizer-panel #cz-text-death_date, 
+    #cz-customizer-panel #cz-text-birth_date2, 
+    #cz-customizer-panel #cz-text-death_date2 {
+        font-size: {{ product.metafields.custom.mobile_date_font_size }}px!important;
+    }
+    #cz-customizer-panel #cz-text-first, 
+    #cz-customizer-panel #cz-text-first2, 
+    #cz-customizer-panel #cz-text-last {
+        font-size: {{ product.metafields.custom.mobile_name_font_size }}px!important;
+    }
+  }
+  </style>
+{% endif %}
   {%- style -%}
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;

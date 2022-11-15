@@ -129,8 +129,18 @@
 .cz-text-date.cz-text-two-line {
   margin-top: -1.25em;
 }
-.cz-text-married-date {
+.married-text2{
+  top: 52.95% !important; 
+  font-size: 11px !important;
+}
+.second-line{
+  display: none;
+}
+.married-text {
   margin-top: -1.25em;
+  transform: rotate(12deg);
+  font-size: 8px !important;
+  top: 47.5% !important;
 }
 .cz-text-married-date.cz-text-two-line {
   margin-top: -1.875em;

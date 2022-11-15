@@ -423,5 +423,12 @@
       "copy_code_success": "Code copied successfully",
       "print_gift_card": "Print"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "delivery_options": {
+        "shipping_address": "Shipping Address (Must be shipped to Home, Funeral home, or Cemetery.)"
+      }
+    }
   }
 }

@@ -166,7 +166,7 @@
   }
 
   function formatMarriedDate(date_format, $parent) {
-    return `Married<br>${formatDate(date_format, $parent)}`;
+    return `<br>${formatDate(date_format, $parent)}`;
   }
 
   function fontColor(frosted) {
