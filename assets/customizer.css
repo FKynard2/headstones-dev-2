@@ -129,8 +129,35 @@
 .cz-text-date.cz-text-two-line {
   margin-top: -1.25em;
 }
+.married-text-independent {
+  position: relative;
+  top: 51.75%;
+  left: 45.7%;
+  font-size: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.married-text-independent2 {
+  top: 48.75%;
+  font-size: 14px;
+  left: 44.6%;
+}
+.married-text-independent3 {
+  top: 48.75%;
+  font-size: 12px;
+  left: 44.6%;
+}
+.married-text4{
+  top: 56.95% !important;
+}
+.married-text5{
+  top: 55.95% !important;
+}
 .married-text2{
-  top: 52.95% !important; 
+  top: 57.95% !important;  
+  font-size: 10px !important;
+}
+.married-text3{
+  top: 55.5% !important;  
   font-size: 11px !important;
 }
 .second-line{
@@ -140,7 +167,7 @@
   margin-top: -1.25em;
   transform: rotate(12deg);
   font-size: 8px !important;
-  top: 47.5% !important;
+  top: 49.5% !important;
 }
 .cz-text-married-date.cz-text-two-line {
   margin-top: -1.875em;
@@ -157,4 +184,12 @@
 
 .cz-field {
   position: relative;
+}
+
+.noDisplay {
+  display: none;
+}
+
+.display {
+  display: inherit;
 }

@@ -17,7 +17,8 @@
         <div class="cz-text cz-text-name" id="cz-text-last"></div>
         <div class="cz-text cz-text-date cz-single-field" id="cz-text-birth_date"></div>
         <div class="cz-text cz-text-date cz-single-field" id="cz-text-death_date"></div>
-        <div class="cz-text cz-text-married-date cz-double-field cz-married-element {% if product.title contains '*D1422' %} married-text {% endif %} {% if product.title contains '*D1015' or product.title contains '*D887' or product.title contains '*D705' %} married-text2 {% endif %}"  id="cz-text-married_date"></div>
+        <div class = 'noDisplay married-text-independent {% if product.title contains '*D631' or product.title contains '*D887' or product.title contains '*D705' %} display {% endif%} {% if product.title contains '*D887' %} married-text-independent2{% endif %}{% if product.title contains '*D631' %}married-text-independent3{% endif %}'>Married</div>
+        <div class="cz-text cz-text-married-date cz-double-field cz-married-element {% if product.title contains '*D1422' %} married-text {% endif %} {% if product.title contains '*D705' %} married-text2 {% endif %} {% if product.title contains '*D1015' %} married-text3 {% endif %} {% if  product.title contains '*D887'%}married-text4{% endif %} {% if  product.title contains '*D631'%}married-text5{% endif %}"   id="cz-text-married_date"></div>
         <div class="cz-text cz-text-date-separator cz-single-field" id="cz-text-date_separator"></div>
         <div class="cz-text cz-text-date-separator cz-double-field" id="cz-text-date_separator2"></div>
         <div class="cz-text cz-text-epitaph cz-single-field cz-epitaph-element" id="cz-text-epitaph"></div>
@@ -63,7 +64,16 @@
     </div> <!-- .grid__item grid__item-medium-up-one-half  -->
     <div class="grid__item-width  grid__item-medium-up-one-half">
       <div class=" text-center">
-        <h2 class="product-title">{{ product.title }}</h2>
+      <!-- *DM metafield: {{ product.metafields.custom.dm_override }} -->
+      {% if product.metafields.custom.dm_override != blank %}
+        {% assign splitAsterisk = product.title | split:'*' %}
+        {% assign preAsterisk = splitAsterisk[0] %}
+        {% assign finalTitle = preAsterisk | append: product.metafields.custom.dm_override %}
+      {% else %}
+        {% assign finalTitle = product.title %}
+      {% endif %}
+      <!-- final title: {{finalTitle}} -->
+        <h2 class="product-title">{{ finalTitle }}</h2>
         <div class="product-description">{{ product.description }}</div>
         <div class="faqContainer-mobile"> {% include 'pdp-faq' %} </div>
         <div class="customizer-price">

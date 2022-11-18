@@ -166,7 +166,9 @@
   }
 
   function formatMarriedDate(date_format, $parent) {
-    return `<br>${formatDate(date_format, $parent)}`;
+    
+
+    return `${formatDate(date_format, $parent)}`;
   }
 
   function fontColor(frosted) {
@@ -419,6 +421,9 @@ finalDesign.addEventListener('click', () => {
   addToCart.classList.remove("product-form__share-disabled")
 })
 
+const newClass = document.querySelector('[data-default-design = ""]');
+
+newClass.classList
 
 // This is to disable buttons when if the customer tries to change the form
 // const submitButton = document.getElementById('cz-share-design')
@@ -481,3 +486,7 @@ finalDesign.addEventListener('click', () => {
 // finalDesign.addEventListener('click', () => {
 //   addToCart.classList.remove("product-form__share-disabled")
 // })
+
+
+
+

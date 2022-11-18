@@ -26,8 +26,20 @@
   border: var(--card-border-width) solid rgba(var(--color-foreground), var(--card-border-opacity));
   position: relative;
   box-sizing: border-box;
+  
 }
-
+#shopify-section-template--15601203839182__product-grid 
+ .card__inner {
+  height: 30vh;
+}
+#shopify-section-template--15601203839182__product-grid 
+ .upright .card__inner {
+  height: 37vh;
+}
+#shopify-section-template--15601203839182__product-grid 
+ .price {
+  font-size: 2rem;
+}
 .card--card:after,
 .card--standard .card__inner:after {
   content: '';
